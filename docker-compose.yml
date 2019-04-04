@@ -1,0 +1,17 @@
+version: '2'
+services:
+    web-dev:
+        image: nginx:alpine
+        links:
+            - php
+        volumes:
+            - ./etc/nginx/dev.conf:/etc/nginx/conf.d/dev.conf
+            - ./etc/nginx/public_html:/var/www/html
+        ports:
+            - 0.0.0.0:7280:7280
+
+    php:
+      image: mauricext4fs/docker-php7-alpine-imagic-openssl
+      volumes:
+        - ./public_html:/var/www/html
+
