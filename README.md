@@ -1,11 +1,7 @@
 Vtiger CRM Docker
 =================
 
-A Vtiger Docker setup - includes Out-of-the-box LAMP image (PHP+MySQL). Based on
-the tutum-docker-lamp project <https://index.docker.io/u/tutum/lamp/>
-
-Uses the convention of `lamp/vtiger` for image name.
-
+A Vtiger Docker setup - includes Out-of-the-box LNMP image (Linux Nginx MySQL PHP-FPM).
 
 Usage
 -----
