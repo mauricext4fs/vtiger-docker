@@ -29,7 +29,6 @@ configure-stable: ## Pull stable release and untar
 		echo "We will attempt to download the latest version";\
 		docker run -t --rm -v${PWD}:/vtigercrmtmp alpine sh -c 'cd /vtigercrmtmp && wget "https://downloads.sourceforge.net/project/vtigercrm/vtiger%20CRM%207.1.0/Core%20Product/vtigercrm7.1.0.tar.gz?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fvtigercrm%2Ffiles%2Fvtiger%2520CRM%25207.1.0%2FCore%2520Product%2Fvtigercrm7.1.0.tar.gz%2Fdownload&ts=1555754790" -O vtigercrm.tgz';\
                 echo " ";\
-                exit 1;\
         fi
 	echo "Extracting vtigercrm.tgz in this directory"
 	tar -zxof vtigercrm.tgz
