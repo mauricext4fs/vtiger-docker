@@ -5,6 +5,9 @@ configure-stable: # Pull stable release and untar
 configure-latest: # Use the current dir for vtiger path
 	-sudo rmdir vtigercrm
 	ln -s . vtigercrm
+clean: down # Remove current vtigercrm installation
+	sudo rm -fR vtigercrm
+	sudo rm -fR varlibmysql
 up: # Run vtiger
 	docker-compose up
 down: # Down Vtiger
