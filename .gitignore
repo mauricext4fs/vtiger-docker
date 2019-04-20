@@ -4,3 +4,4 @@ vtigercrm.tgz
 *.tpl.php
 varlibmysql
 vtigercrm
+.configured.lock
