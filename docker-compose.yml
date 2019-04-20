@@ -19,7 +19,7 @@ services:
 
     mysql:
       image: mysql:5.7
-      command: --sql_mode=ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+      command: --sql_mode=ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION --character-set-server=utf8,--collation-server=utf8_general_ci
       ports:
           - 3308:3306
       volumes:
