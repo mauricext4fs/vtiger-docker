@@ -2,6 +2,7 @@ version: '2'
 services:
     web-dev:
         image: mauricext4fs/docker-alpine-nginx-ssl-ninezh.cc
+        restart: always
         links:
             - php
         volumes:
@@ -19,6 +20,7 @@ services:
 
     php:
       image: mauricext4fs/docker-php7-alpine-imagic-openssl
+      restart: always
       networks:
           www-gateway:
       volumes:
@@ -26,6 +28,7 @@ services:
 
     mysql:
       image: mysql:5.7
+      restart: always
       command: --sql_mode=ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION --character-set-server=utf8,--collation-server=utf8_general_ci
       networks:
           www-gateway:
