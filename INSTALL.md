@@ -8,8 +8,8 @@ git clone https://github.com/mauricext4fs/docker-proxy.git
 
 # INSTALL
 
-- open docker-compose.yml change vtiger.ninezh.cc for your hostname
+- open .env change vtiger.ninezh.cc for your hostname
 - run sudo ./configure
-- then docker-compose up -d
+- 
 
 Enjoy!

@@ -1,6 +1,9 @@
 Vtiger CRM Docker
 =================
 
+PLEASE READ INSTALL.md instead of that file... this file is from the fork repo 
+and is the install instructions are not appropiate for our docker-compose setup.
+
 A Vtiger Docker setup - includes Out-of-the-box LNMP image (Linux Nginx MySQL PHP-FPM).
 
 Usage
