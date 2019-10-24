@@ -29,8 +29,8 @@ ninezh.cc and you should find everything that need changes.
 SSL certificate and key must follow the following 
 naming convention: 
 
-yourdomain.tld.crt
-yourdomain.tld.key
+- yourdomain.tld.crt
+- yourdomain.tld.key
 
 Where tld is .com / .ch or whatever root domain of your hostname.
 
