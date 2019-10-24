@@ -32,14 +32,14 @@ naming convention:
 - yourdomain.tld.crt
 - yourdomain.tld.key
 
-Where tld is .com / .ch or whatever root domain of your hostname.
+Where tld is .com / .ch or whatever root domain you are 
+using for your hostname.
 
 The reason why you must install the certificate in two 
 different places is that docker-proxy is "proxying" the
-request directly to vtiger. However, PHP developers have 
-not been using the proper $_SERVER var to detect that 
-SSL is in used (when the proxy is SSL then no need to 
-run SSL internally). Consequently, we must use SSL on the 
+request directly to Vtiger. However, PHP developers have 
+historicaly not been using the proper $_SERVER vars to detect
+that SSL is in used. Consequently, we must use SSL on the 
 internal path Nginx server as well as on the docker-proxy,
 hence, two places to setup the SSL certificate.
 
@@ -57,12 +57,12 @@ in this screenshot below:
 
 <img src="assets/img/setup_screenshot.png">
 
-username: vtiger
-pass: vtiger
-hostname: mysql (it run inside docker namespace... you cannot access 
+- username: vtiger
+- pass: vtiger
+- hostname: mysql (it run inside docker namespace... you cannot access 
 	  this database directly without passing by docker as the port
 	  mapping as been disabled for security reason).
-database: your choice but don't forget to click on "Create new database".
+- database: your choice but don't forget to click on "Create new database".
 
 # MySQL
 
