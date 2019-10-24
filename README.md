@@ -22,6 +22,18 @@ the proper name to your SSL certificate beaware that you
 must change the volume definition in docker-compose.yml 
 as well as the name of the files on disk.
 
+Also don't forget that you must copy this certificate in 
+docker-proxy/certs. Search for anything starting with 
+ninezh.cc and you should find everything that need changes.
+
+SSL certificate and key must follow the following 
+naming convention: 
+
+yourdomain.tld.crt
+yourdomain.tld.key
+
+Where tld is .com / .ch or whatever root domain of your hostname.
+
 # INSTALL
 
 - open .env change vtiger.ninezh.cc for your hostname
