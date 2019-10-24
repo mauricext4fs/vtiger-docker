@@ -9,6 +9,8 @@ services:
             - ./etc/nginx/nginx.conf:/etc/nginx/nginx.conf
             - ./etc/nginx/options.include:/etc/nginx/options.include
             - ./etc/nginx/vtiger.conf:/etc/nginx/conf.d/default.conf
+            - ./etc/ssl/ninezh.cc.key:/etc/ssl/ninezh.cc.key
+            - ./etc/ssl/ninezh.cc.crt:/etc/ssl/ninezh.cc.crt
             - ./vtigercrm:/var/www/html
         networks:
           www-gateway:
