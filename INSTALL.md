@@ -15,7 +15,7 @@ Now go to https://thedomainyourwrotein.env
 
 MySQL auth are shown in this screenshot:
 
-[Admin Setup]: https://github.com/mauricext4fs/vtiger-docker/blob/master/assets/img/setup_screenshot.png  "Admin Setup"
+<img src="assets/img/setup_screenshot.png">
 
 username: vtiger
 pass: vtiger
