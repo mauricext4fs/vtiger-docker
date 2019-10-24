@@ -19,7 +19,7 @@ services:
           #- VIRTUAL_PORT=443
 
     php:
-      image: mauricext4fs/docker-php7-alpine-imagic-openssl
+      image: mauricext4fs/docker-php56-alpine-imagic-openssl
       restart: always
       networks:
           www-gateway:
