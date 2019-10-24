@@ -19,7 +19,9 @@ MySQL auth are shown in this screenshot:
 
 username: vtiger
 pass: vtiger
-hostname: mysql (it run inside docker namespace... you cannot access this database directly without passing by docker as the port mapping as been disabled for security reason).
+hostname: mysql (it run inside docker namespace... you cannot access 
+	  this database directly without passing by docker as the port
+	  mapping as been disabled for security reason).
 database: your choice but don't forget to click on "Create new database".
 
 # MySQL
