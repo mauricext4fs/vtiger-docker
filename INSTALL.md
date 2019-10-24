@@ -12,8 +12,10 @@ git clone https://github.com/mauricext4fs/docker-proxy.git
 - run sudo ./configure
 
 Now go to https://thedomainyourwrotein.env
+to initialize Vtiger.
 
-MySQL auth are shown in this screenshot:
+Full config including MySQL authentication  are shown 
+in this screenshot below:
 
 <img src="assets/img/setup_screenshot.png">
 
