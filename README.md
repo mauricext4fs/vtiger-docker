@@ -6,6 +6,22 @@ https://github.com/mauricext4fs/docker-proxy
 
 git clone https://github.com/mauricext4fs/docker-proxy.git
 
+# Setting
+
+Vtiger will run on the hostname you provide in .env on port 
+443 (SSL). Port 80 will redirect to https://your.domain. 
+Therefore, you must own an SSL certificate for that domain.
+Two files are required (NGINX SSL default config). First 
+one is the key file (etc/ssl/ninezh.cc.key) containing the private key used to sign 
+the csr... the certificate is signed with that key. The 
+second file is the crt file (ex: etc/ssl/ninezh.cc.crt).
+
+For easy of use you should just overwrite the ninezh.cc* files 
+directly in etc/ssl*. However if you really fancy setting 
+the proper name to your SSL certificate beaware that you 
+must change the volume definition in docker-compose.yml 
+as well as the name of the files on disk.
+
 # INSTALL
 
 - open .env change vtiger.ninezh.cc for your hostname
